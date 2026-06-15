@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Matheus Paranhos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-logo">&lt;MVP /&gt;</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Contato</h1>
+    <p>Vamos conversar? Fique à vontade para chamar.</p>
+  </div>
+
+  <main class="contact-container">
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h2>Fale comigo</h2>
+        <p>Estou aberto a conversas sobre projetos, estágio, colaborações acadêmicas ou simplesmente trocar uma ideia sobre tecnologia.</p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:matheus@email.com">
+            <span class="contact-icon">✉</span>
+            <div>
+              <strong>E-mail</strong>
+              <span>matheus@email.com</span>
+            </div>
+          </a>
+          <a class="contact-link" href="https://github.com/" target="_blank">
+            <span class="contact-icon">⌥</span>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/matheus-paranhos</span>
+            </div>
+          </a>
+          <a class="contact-link" href="https://linkedin.com" target="_blank">
+            <span class="contact-icon">in</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/matheus-paranhos</span>
+            </div>
+          </a>
+          <div class="contact-link">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Localização</strong>
+              <span>Brasília, Distrito Federal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h2>Enviar mensagem</h2>
+        <div class="form-group">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" placeholder="Como posso te chamar?">
+        </div>
+        <div class="form-group">
+          <label for="email">Seu e-mail</label>
+          <input type="email" id="email" placeholder="email@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" placeholder="Sobre o que é?">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+        <button class="btn-primary" onclick="enviarMensagem()">Enviar mensagem</button>
+        <div id="form-feedback" class="form-feedback" style="display:none"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Feito com <span style="color:#4fc3f7">&#9825;</span> por Matheus Paranhos · IFB TDS · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

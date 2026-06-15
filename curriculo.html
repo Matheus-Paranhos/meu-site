@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo — Matheus Paranhos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-logo">&lt;MVP /&gt;</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="curriculo.html" class="active">Currículo</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Currículo</h1>
+    <p>Minha trajetória acadêmica e habilidades técnicas</p>
+    <button class="btn-primary" onclick="window.print()">⬇ Imprimir / Salvar PDF</button>
+  </div>
+
+  <main class="cv-container">
+
+    <!-- PERFIL -->
+    <section class="cv-section reveal">
+      <div class="cv-section-label">Perfil</div>
+      <div class="cv-content">
+        <div class="profile-row">
+          <div class="profile-avatar">MP</div>
+          <div>
+            <h2 class="cv-name">Matheus Vieira Paranhos</h2>
+            <p class="cv-title">Estudante de Desenvolvimento de Sistemas</p>
+            <p class="cv-desc">
+              Estudante do Instituto Federal de Brasília (IFB) no curso Técnico em Desenvolvimento de Sistemas.
+              Apaixonado por tecnologia, construção de interfaces web e resolução de problemas com código.
+              Em constante aprendizado, buscando experiência prática para contribuir com projetos reais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISÓRIA ANIMADA DE FORMAÇÕES -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span class="divider-label">Formações</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- FORMAÇÃO TÉCNICA -->
+    <section class="cv-section reveal">
+      <div class="cv-section-label">Técnico</div>
+      <div class="cv-content">
+        <div class="edu-item">
+          <div class="edu-period">2024 – em curso</div>
+          <div class="edu-body">
+            <h3>Técnico em Desenvolvimento de Sistemas</h3>
+            <p class="edu-inst">Instituto Federal de Brasília (IFB)</p>
+            <p class="edu-desc">
+              Curso técnico integrado voltado para desenvolvimento de software, lógica de programação,
+              banco de dados, redes e criação de aplicações web. Projeto Integrador como atividade
+              interdisciplinar entre Introdução à Informática e Lógica de Programação I.
+            </p>
+            <div class="edu-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Lógica de Programação</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISÓRIA INTERNA -->
+    <div class="inner-divider"></div>
+
+    <!-- FORMAÇÃO BÁSICA -->
+    <section class="cv-section reveal">
+      <div class="cv-section-label">Básico</div>
+      <div class="cv-content">
+        <div class="edu-item">
+          <div class="edu-period">Concluído</div>
+          <div class="edu-body">
+            <h3>Ensino Fundamental e Médio</h3>
+            <p class="edu-inst">Escola pública — Distrito Federal</p>
+            <p class="edu-desc">
+              Formação básica com interesse em ciências exatas e informática desde cedo,
+              o que motivou a escolha do curso técnico no IFB.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIM DAS FORMAÇÕES -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span class="divider-label">Habilidades</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- HABILIDADES -->
+    <section class="cv-section reveal">
+      <div class="cv-section-label">Skills</div>
+      <div class="cv-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>HTML5</span><span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>CSS3</span><span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>JavaScript</span><span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Lógica de Programação</span><span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Git / GitHub</span><span class="skill-pct">45%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Pacote Office</span><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETO DESTAQUE -->
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span class="divider-label">Projetos</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <section class="cv-section reveal">
+      <div class="cv-section-label">Destaque</div>
+      <div class="cv-content">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Projeto Integrador — Página Pessoal no GitHub Pages</h3>
+            <span class="project-badge">2025</span>
+          </div>
+          <p>
+            Desenvolvimento de um site pessoal com múltiplas páginas (início, currículo, blog e contato),
+            integrando HTML, CSS e JavaScript. Publicado no GitHub Pages como portfólio acadêmico.
+            Disciplinas integradas: Introdução à Informática e Lógica de Programação I.
+          </p>
+          <div class="edu-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Feito com <span style="color:#4fc3f7">&#9825;</span> por Matheus Paranhos · IFB TDS · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

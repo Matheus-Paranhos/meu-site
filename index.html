@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Minha página no GitHub</title>
-    </head>
-    <body>
-        <header><h1>Minha página no GitHub</h1></header>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Paranhos — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-logo">&lt;MVP /&gt;</span>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Olá, mundo. Eu sou</p>
+      <h1 class="hero-name">Matheus Vieira<br><span class="accent">Paranhos</span></h1>
+      <p class="hero-sub">Estudante de Desenvolvimento de Sistemas · IFB</p>
+      <div class="hero-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Lógica de Programação</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="curriculo.html" class="btn-primary">Ver currículo</a>
+        <a href="contato.html" class="btn-ghost">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="hero-code">
+      <div class="code-card" id="codeTyper">
+        <span class="code-comment">// sobre mim</span><br>
+        <span class="code-kw">const</span> <span class="code-var">dev</span> = {<br>
+        &nbsp;&nbsp;<span class="code-key">nome</span>: <span class="code-str">"Matheus Paranhos"</span>,<br>
+        &nbsp;&nbsp;<span class="code-key">escola</span>: <span class="code-str">"IFB"</span>,<br>
+        &nbsp;&nbsp;<span class="code-key">curso</span>: <span class="code-str">"TDS"</span>,<br>
+        &nbsp;&nbsp;<span class="code-key">foco</span>: <span class="code-str">"Web Dev"</span>,<br>
+        &nbsp;&nbsp;<span class="code-key">disponível</span>: <span class="code-bool">true</span><br>
+        };<br><br>
+        <span class="code-comment">// missão</span><br>
+        <span class="code-kw">function</span> <span class="code-fn">construir</span>() {<br>
+        &nbsp;&nbsp;<span class="code-kw">return</span> <span class="code-str">"soluções reais"</span>;<br>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="card" onclick="location.href='curriculo.html'">
+      <div class="card-icon">📄</div>
+      <h3>Currículo</h3>
+      <p>Formação, habilidades e experiências organizadas.</p>
+    </div>
+    <div class="card" onclick="location.href='blog.html'">
+      <div class="card-icon">✍️</div>
+      <h3>Blog</h3>
+      <p>Anotações, aprendizados e reflexões do curso.</p>
+    </div>
+    <div class="card" onclick="location.href='contato.html'">
+      <div class="card-icon">📬</div>
+      <h3>Contato</h3>
+      <p>Vamos conversar? Fique à vontade para chamar.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Feito com <span style="color:#4fc3f7">&#9825;</span> por Matheus Paranhos · IFB TDS · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>

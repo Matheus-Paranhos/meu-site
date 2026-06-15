@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Matheus Paranhos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-logo">&lt;MVP /&gt;</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Blog</h1>
+    <p>Anotações e aprendizados da minha jornada no IFB</p>
+  </div>
+
+  <main class="blog-container">
+
+    <div class="blog-filter">
+      <button class="filter-btn active" onclick="filterPosts('all', this)">Todos</button>
+      <button class="filter-btn" onclick="filterPosts('html', this)">HTML/CSS</button>
+      <button class="filter-btn" onclick="filterPosts('js', this)">JavaScript</button>
+      <button class="filter-btn" onclick="filterPosts('logica', this)">Lógica</button>
+    </div>
+
+    <div class="blog-grid" id="blogGrid">
+
+      <article class="blog-post reveal" data-category="html">
+        <div class="post-meta">
+          <span class="post-category html-tag">HTML/CSS</span>
+          <span class="post-date">Junho 2025</span>
+        </div>
+        <h2>Etapa 6: construindo meu portfólio com HTML</h2>
+        <p>Chegamos à etapa final do Projeto Integrador. Nessa etapa, integrei tudo que aprendi
+        sobre HTML semântico, CSS com variáveis e JavaScript para criar um site pessoal completo...</p>
+        <button class="btn-read" onclick="openPost(this)">Ler mais</button>
+        <div class="post-full" style="display:none">
+          <p>A etapa 6 do Projeto Integrador foi a mais desafiadora e também a mais recompensadora.
+          Precisei criar quatro páginas HTML integradas: início, currículo, blog e contato.
+          Aprendi como organizar o código com um arquivo CSS e JS compartilhado, o que economiza
+          muito trabalho e mantém o visual consistente.</p>
+          <p>O maior desafio foi fazer a responsividade funcionar em celulares. Aprendi sobre
+          media queries e como o CSS muda o comportamento dos elementos em telas pequenas.</p>
+        </div>
+      </article>
+
+      <article class="blog-post reveal" data-category="js">
+        <div class="post-meta">
+          <span class="post-category js-tag">JavaScript</span>
+          <span class="post-date">Maio 2025</span>
+        </div>
+        <h2>Minha primeira função em JavaScript</h2>
+        <p>Quando escrevi minha primeira função que realmente funcionou, foi um momento de muito
+        orgulho. Entender o que é um parâmetro, retorno e escopo foi um passo importante...</p>
+        <button class="btn-read" onclick="openPost(this)">Ler mais</button>
+        <div class="post-full" style="display:none">
+          <p>Lógica de Programação I me ensinou que programar não é só escrever código —
+          é pensar de forma estruturada antes mesmo de abrir o editor. A função é a menor
+          unidade de organização do código, e entendê-la mudou a forma como vejo problemas.</p>
+          <p>Dica que aprendi: antes de programar, escreva em português o que a função precisa
+          fazer. Parece simples, mas evita muita confusão.</p>
+        </div>
+      </article>
+
+      <article class="blog-post reveal" data-category="logica">
+        <div class="post-meta">
+          <span class="post-category logica-tag">Lógica</span>
+          <span class="post-date">Abril 2025</span>
+        </div>
+        <h2>Algoritmos: pensar antes de digitar</h2>
+        <p>A disciplina de Lógica de Programação me ensinou que o maior erro de quem está
+        começando é abrir o editor antes de entender o problema. Fluxogramas e pseudocódigo
+        salvam horas de retrabalho...</p>
+        <button class="btn-read" onclick="openPost(this)">Ler mais</button>
+        <div class="post-full" style="display:none">
+          <p>Fluxograma não é coisa antiga ou inútil. É a ferramenta mais honesta que existe
+          para visualizar a lógica antes de traduzir para qualquer linguagem. Erros de lógica
+          são muito mais baratos de corrigir no papel do que no código.</p>
+          <p>Na aula de Introdução à Informática, descobri como computadores funcionam por baixo
+          dos panos — e isso mudou completamente como eu enxergo o que escrevo.</p>
+        </div>
+      </article>
+
+      <article class="blog-post reveal" data-category="html">
+        <div class="post-meta">
+          <span class="post-category html-tag">HTML/CSS</span>
+          <span class="post-date">Março 2025</span>
+        </div>
+        <h2>HTML semântico: a diferença que faz diferença</h2>
+        <p>Por que usar &lt;article&gt; em vez de &lt;div&gt;? A resposta está na acessibilidade
+        e no SEO. Aprendi que o HTML não é só estrutura — é comunicação com o navegador...</p>
+        <button class="btn-read" onclick="openPost(this)">Ler mais</button>
+        <div class="post-full" style="display:none">
+          <p>Tags como header, main, footer, nav, section e article dizem ao navegador o que
+          cada parte da página significa. Um leitor de tela para pessoas cegas usa essas
+          informações para navegar corretamente.</p>
+          <p>Quando aprendi isso, percebi que escrever HTML com divs para tudo é como escrever
+          um livro sem capítulos, parágrafos ou títulos. O conteúdo até está lá, mas ninguém
+          consegue se orientar.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Feito com <span style="color:#4fc3f7">&#9825;</span> por Matheus Paranhos · IFB TDS · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
