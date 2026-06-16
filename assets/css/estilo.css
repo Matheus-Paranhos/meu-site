@@ -497,9 +497,6 @@ img { max-width: 100%; display: block; }
   grid-template-columns: 1fr 1fr;
   gap: 1rem 2rem;
 }
-
-.skill-item { }
-
 .skill-header {
   display: flex;
   justify-content: space-between;
